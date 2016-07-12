@@ -27,7 +27,7 @@ class ShaHmac256Signer implements ISigner
     }
 
 
-    public function  getSignatureMethod()
+    public function getSignatureMethod()
     {
         return "HMAC-SHA256";
     }
