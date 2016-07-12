@@ -1,5 +1,5 @@
 {
-  "name": "lokielse/aliyun-open-api-core",
+  "name": "yuzewang/aliyun-open-api-core",
   "description": "The Core SDK for Aliyun OpenAPI",
   "keywords": [
     "aliyun",
@@ -7,13 +7,18 @@
     "php",
     "sdk"
   ],
-  "homepage": "https://github.com/lokielse/aliyun-open-api-core",
+  "homepage": "https://github.com/yuzewang/aliyun-open-api-core",
   "license": "MIT",
   "authors": [
     {
       "name": "lokielse",
       "email": "lokielse@gmail.com",
       "homepage": "http://lokielse.org",
+      "role": "Developer"
+    },
+    {
+      "name": "yuze wang",
+      "email": "yuze89@gmail.com",
       "role": "Developer"
     }
   ],

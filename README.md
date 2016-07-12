@@ -12,7 +12,7 @@ The Core SDK for Aliyun OpenApi
 Via Composer
 
 ``` bash
-$ composer require lokielse/aliyun-open-api-core
+$ composer require yuzewang/aliyun-open-api-core
 ```
 
 ## Related
@@ -24,6 +24,7 @@ $ composer require lokielse/aliyun-open-api-core
 - [lokielse/aliyun-open-api-slb](https://github.com/lokielse/php-aliyun-open-api-slb)
 - [lokielse/aliyun-open-api-push](https://github.com/lokielse/php-aliyun-open-api-push)
 - [lokielse/aliyun-open-api-mns](https://github.com/lokielse/php-aliyun-open-api-mns)
+- [yuzewang/aliyun-open-api-iot](https://github.com/yuzewang/php-aliyun-open-api-iot)
 
 
 ## Change log
