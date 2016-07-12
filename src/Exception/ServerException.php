@@ -1,4 +1,4 @@
-<?php namespace Aliyun\Core\Exceptions;
+<?php namespace Aliyun\Core\Exception;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -21,10 +21,10 @@
 class ServerException extends ClientException
 {
 
-    public function  __construct($errorMessage, $errorCode)
-    {
-        parent::__construct($errorMessage, $errorCode);
-        $this->setErrorType("Server");
-    }
+	public function  __construct($errorMessage, $errorCode)
+	{
+		parent::__construct($errorMessage, $errorCode);
+		$this->setErrorType("Server");
+	}
 
 }

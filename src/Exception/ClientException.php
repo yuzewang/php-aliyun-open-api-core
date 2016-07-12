@@ -1,4 +1,4 @@
-<?php namespace Aliyun\Core\Http;
+<?php namespace Aliyun\Core\Exception;
 
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -18,37 +18,49 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-class HttpResponse
+class ClientException extends Exception
 {
-	private $body;
-	private $status;
-	
-	public function getBody()
+	public function  __construct($errorMessage, $errorCode)
 	{
-		return $this->body;
+		parent::__construct($errorMessage);
+		$this->errorMessage = $errorMessage;
+		$this->errorCode = $errorCode;
+		$this->setErrorType("Client");
 	}
 	
-	public function setBody($body)
+	private $errorCode;
+	private $errorMessage;
+	private $errorType;
+	
+	public function getErrorCode()
 	{
-		$this->body = $body;
+		return $this->errorCode;
 	}
 	
-	public function getStatus()
+	public function setErrorCode($errorCode)
 	{
-		return $this->status;
+		$this->errorCode = $errorCode;
 	}
 	
-	public function setStatus($status)
+	public function getErrorMessage()
 	{
-		$this->status  = $status;
+		return $this->errorMessage;
 	}
 	
-	public function isSuccess()
+	public function setErrorMessage($errorMessage)
 	{
-		if(200 <= $this->status && 300 > $this->status)
-		{
-			return true;
-		}
-		return false;
+		$this->errorMessage = $errorMessage;
 	}
+	
+	public function getErrorType()
+	{
+		return $this->errorType;
+	}
+	
+	public function setErrorType($errorType)
+	{
+		$this->errorType = $errorType;
+	}
+	
+
 }
